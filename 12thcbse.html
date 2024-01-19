@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../nbimages/logo.png">
+    <title>Physics Centre - Neeraj Bhardwaj</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Gemstones&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/nbstyle.css">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4635898807873836"
+        crossorigin="anonymous"></script>
+    <style>
+        header {
+            background-color: #333;
+            color: yellow;
+            padding: 10px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0px;
+        }
+
+        .logo {
+            width: 60px;
+            height: 60px;
+            display: inline-block;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+
+        nav {
+            background-color: #555;
+        }
+
+        #shubh li a:hover {
+            background-color: #333;
+            border-radius: 20px;
+        }
+
+        main {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .result {
+            width: 300px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .result:hover {
+            transform: translateY(-10px);
+        }
+
+        .result-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .result-caption {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .result-caption h3 {
+            margin: 10px 0;
+            color: #333;
+        }
+
+        .result-caption p {
+            color: #777;
+        }
+
+        footer {
+            background-color: #555;
+            color: #fff;
+            padding: 1px;
+            text-align: center;
+        }
+
+        .social-icons a {
+            font-size: 20px;
+            display: inline-block;
+            margin: 0 5px;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .social-icons a:hover {
+            color: red;
+        }
+
+        .social-media-icons {
+            margin-top: 10px;
+        }
+
+        .social-media-icons a {
+            color: #fff;
+            margin: 0 10px;
+            font-size: 24px;
+        }
+
+        .social-media-icons :hover {
+            color: #dc1d5d;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="../nbimages/logo.png" alt="Physics Centre">
+        <h1>Physics Centre</h1>
+    </header>
+   <!-- <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImg"> -->
+    </div>
+    <nav class="navbar navbar-expand-lg  " style="padding: 0.2rem;">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation" style="background-color: white;">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent"
+                style="align-items: center;justify-content: center;font-weight: bold;">
+                <ul class="navbar-nav " id="shubh">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html" style="color: #fff;">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="result.html" style="color: #fff;">Star
+                            Performers</a>
+                    </li>
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle " href="#" role="button " data-bs-toggle="dropdown"
+                            aria-expanded="false" style="color: #fff;">
+                            Class Performers
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="11thcbse.html">11-CBSE</a>
+                            </li>
+                            <hr class="dropdown-divider">
+                            <li><a class="dropdown-item" href="12thcbse.html">12-CBSE</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="batches.html" style="color: #fff;">Batches</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="gallery.html" style="color: #fff;">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="resources.html"
+                            style="color: #fff;">Resources</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="contact.html" style="color: #fff;">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        
+        <div class="result">
+            <img class="result-image" src="../Class Performers/12 cbse/Sumangalam.bmp" alt="Sumangalam Shree">
+            <div class="result-caption">
+                <h3>Sumangalam Shree</h3>
+                <h4>CBSE</h4>
+                <p>Test - 31 | Rank - 1</p>
+            </div>
+        </div>
+
+        
+        <div class="result">
+            <img class="result-image" src="../Class Performers/12 cbse/anand.jpg" alt="Anand ">
+            <div class="result-caption">
+                <h3>Anand Bhardwaj</h3>
+                <h4>CBSE</h4>
+                <p>Test - 29 & 30 | Rank - 1</p>
+            </div>
+        </div>
+
+        <div class="result">
+            <img class="result-image" src="../Class Performers/12 cbse/Sumaiya.png" alt="Sumaiya">
+            <div class="result-caption">
+                <h3>Sumaiya</h3>
+                <h4>CBSE</h4>
+                <p>Test - 28| Rank - 1</p>
+            </div>
+        </div>
+
+        <div class="result">
+            <img class="result-image" src="../Class Performers/12 cbse/Shubham.png" alt="Shubham Kumar Jha">
+            <div class="result-caption">
+                <h3>Shubham Kumar Jha</h3>
+                <h4>CBSE</h4>
+                <p>Test - 28| Rank - 1</p>
+            </div>
+        </div>
+
+        <div class="result">
+            <img class="result-image" src="../Class Performers/12 cbse/Sakshi Singh.png" alt="Sakshi">
+            <div class="result-caption">
+                <h3>Sakshi Singh</h3>
+                <h4>CBSE</h4>
+                <p>Test - 27| Rank - 1</p>
+            </div>
+        </div>
+
+        <div class="result">
+            <img class="result-image" src="../Class Performers/12 cbse/anand.jpg" alt="Anand">
+            <div class="result-caption">
+                <h3>Anand Bhardwaj</h3>
+                <h4>CBSE</h4>
+                <p>Test - 25 & 26 | Rank - 1</p>
+            </div>
+        </div>
+
+        <div class="result">
+            <img class="result-image" src="../Class Performers/12 cbse/Raushan Kumar Pandit.png" alt="Raushan">
+            <div class="result-caption">
+                <h3>Raushan Kumar Pandit</h3>
+                <h4>CBSE</h4>
+                <p>Test - 24 | Rank - 1</p>
+            </div>
+        </div>
+
+        <div class="result">
+            <img class="result-image" src="../Class Performers/12 cbse/anand.jpg" alt="Anand">
+            <div class="result-caption">
+                <h3>Anand Bhardwaj</h3>
+                <h4>CBSE</h4>
+                <p>Test - 20 to 23 | Rank - 1</p>
+            </div>
+        </div>
+
+        <div class="result">
+            <img class="result-image" src="../Class Performers/12 cbse/Sakshi Singh.png" alt="Sakshi">
+            <div class="result-caption">
+                <h3>Sakshi Singh</h3>
+                <h4>CBSE</h4>
+                <p>Test - 19| Rank - 1</p>
+            </div>
+        </div>
+
+        <div class="result">
+            <img class="result-image" src="../Class Performers/12 cbse/anand.jpg" alt="Anand">
+            <div class="result-caption">
+                <h3>Anand Bhardwaj</h3>
+                <h4>CBSE</h4>
+                <p>Test - 16 to 18 | Rank - 1</p>
+            </div>
+        </div>
+
+        <div class="result">
+            <img class="result-image" src="../Class Performers/12 cbse/Anand Bhardwaj.jpg" alt="Anand">
+            <div class="result-caption">
+                <h3>Anand Bhardwaj</h3>
+                <h4>CBSE</h4>
+                <p>Test - 15 | Rank - 1</p>
+            </div>
+        </div>
+
+        <div class="result">
+            <img class="result-image" src="../Class Performers/12 cbse/Astha Kumari.png " alt="Astha Kumari">
+            <div class="result-caption">
+                <h3>Astha Kumari</h3>
+                <h4>CBSE</h4>
+                <p>Test - 14 | Rank - 1</p>
+            </div>
+        </div>
+
+        <div class="result">
+            <img class="result-image" src="../Class Performers/12 cbse/Anand Bhardwaj.jpg" alt="Anand">
+            <div class="result-caption">
+                <h3>Anand Bhardwaj</h3>
+                <h4>CBSE</h4>
+                <p>Test - 14 | Rank - 1</p>
+            </div>
+        </div>
+
+        <div class="result">
+            <img class="result-image" src="../Class Performers/12 cbse/Anand Bhardwaj.jpg" alt="Anand">
+            <div class="result-caption">
+                <h3>Anand Bhardwaj</h3>
+                <h4>CBSE</h4>
+                <p>Test - 12 & 13 | Rank -1 </p>
+            </div>
+        </div>
+
+        <div class="result">
+            <img class="result-image" src="../Class Performers/12 cbse/Uday Bhaskar Dutta.jpg" alt="Uday">
+            <div class="result-caption">
+                <h3>Uday Bhaskar Dutta</h3>
+                <h4>CBSE</h4>
+                <p>Test - 11 | Rank -1 </p>
+            </div>
+        </div>
+
+        <div class="result">
+            <img class="result-image" src="../Class Performers/12 cbse/Anand Bhardwaj.jpg" alt="Anand">
+            <div class="result-caption">
+                <h3>Anand Bhardwaj</h3>
+                <h4>CBSE</h4>
+                <p>Test - 10 | Rank -1 </p>
+            </div>
+        </div>
+
+        <div class="result">
+            <img class="result-image" src="../Class Performers/12 cbse/Uday Bhaskar Dutta.jpg" alt="Uday">
+            <div class="result-caption">
+                <h3>Uday Bhaskar Dutta</h3>
+                <h4>CBSE</h4>
+                <p>Test - 9 | Rank -1 </p>
+            </div>
+        </div>
+
+        <div class="result">
+            <img class="result-image" src="../Class Performers/12 cbse/Anand Bhardwaj.jpg" alt="Anand">
+            <div class="result-caption">
+                <h3>Anand Bhardwaj</h3>
+                <h4>CBSE</h4>
+                <p>Test - 2 to 9 | Rank -1 </p>
+            </div>
+        </div>
+
+        <div class="result">
+            <img class="result-image" src="../Class Performers/12 cbse/Uday Bhaskar Dutta.jpg" alt="Uday">
+            <div class="result-caption">
+                <h3>Uday Bhaskar Dutta</h3>
+                <h4>CBSE</h4>
+                <p>Test - 1 | Rank -1 </p>
+            </div>
+        </div>
+    </main>
+</body>
+<!-- Footer -->
+<footer>
+    <div class="social-icons">
+        <a href="https://www.facebook.com/Scientificphysics/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://wa.me/message/XVP3C3JPGZ4QL1" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="mailto:nbprofile@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+    </div>
+    <p>For any feedback :-</p>
+    <div class="social-media-icons">
+        <a href="https://instagram.com/itsmeshubh2026?igshid=YTQwZjQ0NmI0OA=="><i class="fab fa-instagram"></i></a>
+    </div>
+    <p>&copy; 2023 Physics Centre. All rights reserved.</p>
+</footer>
+<!-- Footer -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+<script>
+    // JavaScript code
+    window.onload = function () {
+        var modal = document.getElementById("myModal");
+        var modalImg = document.getElementById("modalImg");
+        modalImg.src = "../PopUp/pop up.jpg";
+        modal.style.display = "block";
+    };
+
+    var span = document.getElementsByClassName("close")[0];
+    span.onclick = function () {
+        var modal = document.getElementById("myModal");
+        modal.style.display = "none";
+    };
+    function closeModal() {
+        var modal = document.getElementById("myModal");
+        modal.style.display = "none";
+    }
+</script>
+
+</html>

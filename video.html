@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../nbimages/logo.png">
+    <title>Physics Centre - Neeraj Bhardwaj</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Gemstones&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/nbstyle.css">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4635898807873836"
+        crossorigin="anonymous"></script>
+    <style>
+        header {
+            background-color: #333;
+            color: yellow;
+            padding: 10px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0px;
+        }
+
+        .logo {
+            width: 60px;
+            height: 60px;
+            display: inline-block;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+
+        nav {
+            background-color: #555;
+        }
+
+        #shubh li a:hover {
+            background-color: #333;
+            border-radius: 20px;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .chapter,
+        .subtopic {
+            font-family: 'Rubik Gemstones', sans-serif;
+            cursor: pointer;
+            transition: color 0.3s, transform 0.3s;
+        }
+
+        .subtopic {
+            font-family: 'Times New Roman', Times, serif;
+
+        }
+
+        .chapter:hover {
+            color: red;
+            transform: scale(1.05);
+        }
+
+        .subtopic:hover {
+            color: rgb(56, 56, 179);
+        }
+
+        .chapter-name,
+        .subtopic-name {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .subtopic,
+        .video-container {
+            display: none;
+        }
+
+        .subtopic.show,
+        .video-container.show {
+            display: block;
+        }
+
+        .video-container {
+            margin-top: 10px;
+        }
+
+        /* .video-container iframe {
+            width: 560px;
+            height: 315px;
+        } */
+
+        @media (max-width: 768px) {
+            .video-container iframe {
+                width: 100%;
+            }
+        }
+
+        footer {
+            background-color: #555;
+            color: #fff;
+            padding: 1px;
+            text-align: center;
+        }
+
+        .social-icons a {
+            font-size: 20px;
+            display: inline-block;
+            margin: 0 5px;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .social-icons a:hover {
+            color: red;
+        }
+
+        .social-media-icons {
+            margin-top: 10px;
+        }
+
+        .social-media-icons a {
+            color: #fff;
+            margin: 0 10px;
+            font-size: 24px;
+        }
+
+        .social-media-icons :hover {
+            color: #dc1d5d;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img class="logo" src="../nbimages/logo.png" alt="Physics Centre">
+        <h1>Physics Centre</h1>
+    </header>
+
+    <nav class="navbar navbar-expand-lg  " style="padding: 0.2rem;">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation" style="background-color: white;">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent"
+                style="align-items: center;justify-content: center;font-weight: bold;">
+                <ul class="navbar-nav " id="shubh">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html" style="color: #fff;">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="result.html" style="color: #fff;">Star
+                            Performers</a>
+                    </li>
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle " href="#" role="button " data-bs-toggle="dropdown"
+                            aria-expanded="false" style="color: #fff;">
+                            Class Performers
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="11thcbse.html">11-CBSE</a>
+                            </li>
+                            <hr class="dropdown-divider">
+                            <li><a class="dropdown-item" href="12thcbse.html">12-CBSE</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="batches.html" style="color: #fff;">Batches</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="gallery.html" style="color: #fff;">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active " aria-current="page" href="resources.html"
+                            style="color: #fff;">Resources</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="contact.html" style="color: #fff;">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <h2>Video Lectures</h2>
+
+        <div class="chapter" onclick="toggleSection('section1')">
+            <div class="chapter-name">Chapter 9: Ray Optics</div>
+            <div class="subtopic" id="section1">
+                <div class="subtopic-name" onclick="toggleVideo('video1')">Day- 1</div>
+                <div class="video-container" id="video1">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/GIW1SdNQtWg?si=miJE-7nM8ChfKqhB"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="subtopic" id="section1">
+                <div class="subtopic-name" onclick="toggleVideo('video2')">Day - 2</div>
+                <div class="video-container" id="video2">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/q4eamBarwEM?si=NioegMmT2NpCWjGx"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="subtopic" id="section1">
+                <div class="subtopic-name" onclick="toggleVideo('video3')">Day - 3</div>
+                <div class="video-container" id="video3">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/XtTjoFrCyKM?si=12G20GFaA1BGVlPG"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="subtopic" id="section1">
+                <div class="subtopic-name" onclick="toggleVideo('video4')">Day - 4</div>
+                <div class="video-container" id="video4">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/F7XkraFirj8?si=34imP8kCBf1Y2ZpP"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="subtopic" id="section1">
+                <div class="subtopic-name" onclick="toggleVideo('video5')">Day - 5</div>
+                <div class="video-container" id="video5">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/yYf1OeUNvIw?si=LL0HqRenES7-95yL"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="subtopic" id="section1">
+                <div class="subtopic-name" onclick="toggleVideo('video6')">Day - 6</div>
+                <div class="video-container" id="video6">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/b8M-Z7IbDPk?si=dcbL6zyuPzpXbeAm"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="subtopic" id="section1">
+                <div class="subtopic-name" onclick="toggleVideo('video7')">Day - 7</div>
+                <div class="video-container" id="video7">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/pos5g03uw38?si=r2OWvpgq2D5EnIQK"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="subtopic" id="section1">
+                <div class="subtopic-name" onclick="toggleVideo('video8')">Day - 8</div>
+                <div class="video-container" id="video8">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/C7tCitAzB_g?si=l2RpE5swoGw1x8uC"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="subtopic" id="section1">
+                <div class="subtopic-name" onclick="toggleVideo('video9')">Day - 9</div>
+                <div class="video-container" id="video9">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/NGYN2qDqJ6Y?si=WvFPsVsJFoVY7RkC"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="subtopic" id="section1">
+                <div class="subtopic-name" onclick="toggleVideo('video10')">Day - 10</div>
+                <div class="video-container" id="video10">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/f0ktwjo9vOA?si=v_qlm3wdooqq9Km_"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="subtopic" id="section1">
+                <div class="subtopic-name" onclick="toggleVideo('video11')">Day - 11</div>
+                <div class="video-container" id="video11">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/A4muEwucgxM?si=2evlLh6btxoGp_QZ"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="subtopic" id="section1">
+                <div class="subtopic-name" onclick="toggleVideo('video12')">Day - 12</div>
+                <div class="video-container" id="video12">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/IOOjJFdzX-U?si=1OSijKkCGlFqyxQ9"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="subtopic" id="section1">
+                <div class="subtopic-name" onclick="toggleVideo('video13 I')">Day - 13 (I) </div>
+                <div class="video-container" id="video13 I">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/tsH0rBOQBwg?si=F_q7fKYpEx28IefR"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="subtopic" id="section1">
+                <div class="subtopic-name" onclick="toggleVideo('video13 II')">Day - 3 (II)</div>
+                <div class="video-container" id="video13 II">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/31ZgJDbYK-k?si=0rNdt2nFDoYH9OvS"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="subtopic" id="section1">
+                <div class="subtopic-name" onclick="toggleVideo('video14')">Day - 14</div>
+                <div class="video-container" id="video14">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ZotYZkfPIaE?si=GVJl_KSUCE8gBZWQ"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="subtopic" id="section1">
+                <div class="subtopic-name" onclick="toggleVideo('video15')">Day - 15</div>
+                <div class="video-container" id="video15">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/zmbPE72QDqc?si=w1lZ5IGx4qgEIN8e"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="subtopic" id="section1">
+                <div class="subtopic-name" onclick="toggleVideo('video6')">Day - 16</div>
+                <div class="video-container" id="video16">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/mG6KNGB-JkI?si=J9YSTenIcBUPScuC"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+
+          <!--  <div class="subtopic" id="section1">
+                <div class="subtopic-name" onclick="toggleVideo('video17')">Day - 17</div>
+                <div class="video-container" id="video17">
+                    <iframe >   </iframe>
+                </div>
+            </div> -->
+
+
+        </div>
+
+        <div class="chapter" onclick="toggleSection('section2')">
+            <div class="chapter-name">BSEB Important Questions</div>
+            <div class="subtopic" id="section2">
+                <div class="subtopic-name" onclick="toggleVideo('video1')">Bihar Board Objective Questions - Day 1</div>
+                <div class="video-container" id="video1">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/YFG3xRm-V3U?si=peK1P7gKprx80_Wp"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <!-- <div class="subtopic" id="section2">
+                <div class="subtopic-name" onclick="toggleVideo('video2')">Bihar Board Objective Questions - Day 2</div>
+                <div class="video-container" id="video2">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/YFG3xRm-V3U?si=peK1P7gKprx80_Wp"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+            </div> -->
+
+        </div>
+
+        <!-- Add more chapters as needed -->
+
+    </div>
+
+
+    <footer>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/Scientificphysics/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://wa.me/message/XVP3C3JPGZ4QL1" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="mailto:nbprofile@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+        </div>
+        <p>For any feedback :-</p>
+        <div class="social-media-icons">
+            <a href="https://instagram.com/itsmeshubh2026?igshid=YTQwZjQ0NmI0OA=="><i class="fab fa-instagram"></i></a>
+        </div>
+        <p>&copy; 2023 Physics Centre. All rights reserved.</p>
+    </footer>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+    </script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var chapters = document.querySelectorAll('.chapter');
+
+        chapters.forEach(function (chapter) {
+            chapter.addEventListener('click', function () {
+                var subtopics = chapter.querySelectorAll('.subtopic');
+                subtopics.forEach(function (subtopic) {
+                    subtopic.classList.toggle('show');
+                });
+            });
+        });
+
+        var subtopics = document.querySelectorAll('.subtopic');
+
+        subtopics.forEach(function (subtopic) {
+            subtopic.addEventListener('click', function (event) {
+                event.stopPropagation();
+                var videoContainer = subtopic.querySelector('.video-container');
+                hideOtherVideos(videoContainer);
+                videoContainer.classList.toggle('show');
+            });
+        });
+
+        function hideOtherVideos(currentVideoContainer) {
+            subtopics.forEach(function (subtopic) {
+                var videoContainer = subtopic.querySelector('.video-container');
+                if (videoContainer !== currentVideoContainer && videoContainer.classList.contains('show')) {
+                    videoContainer.classList.remove('show');
+                }
+            });
+        }
+    });
+</script>
+
+</html>
